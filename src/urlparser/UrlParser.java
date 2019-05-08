@@ -31,7 +31,7 @@ public class UrlParser {
                 Document document = sr.read(myURL);
                 List lista = document.selectNodes("//images/image");
                 Iterator iter = lista.iterator();
-
+                   System.out.println("111111111111");
                 while (iter.hasNext()) {
                     Element row = (Element) iter.next();
                     System.out.println(row.attribute(0).getText());
